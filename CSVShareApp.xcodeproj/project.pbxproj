@@ -14,7 +14,59 @@
 		15E8831E27F438BB006A44D5 /* CSVShareApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 15E8831C27F438BB006A44D5 /* CSVShareApp.xcdatamodeld */; };
 		15E8832027F438BC006A44D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15E8831F27F438BC006A44D5 /* Assets.xcassets */; };
 		15E8832327F438BC006A44D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15E8832127F438BC006A44D5 /* LaunchScreen.storyboard */; };
+		15E8833127F438F4006A44D5 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8833027F438F4006A44D5 /* ShareViewController.swift */; };
+		15E8833427F438F4006A44D5 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15E8833227F438F4006A44D5 /* MainInterface.storyboard */; };
+		15E8833827F438F4006A44D5 /* CSVShare.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 15E8832E27F438F4006A44D5 /* CSVShare.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		15E8834527F43BE6006A44D5 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8834027F43BE6006A44D5 /* CustomLabel.swift */; };
+		15E8834627F43BE6006A44D5 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8834127F43BE6006A44D5 /* CustomButton.swift */; };
+		15E8834727F43BE6006A44D5 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8834227F43BE6006A44D5 /* CustomTextField.swift */; };
+		15E8834827F43BE6006A44D5 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8834327F43BE6006A44D5 /* CustomImageView.swift */; };
+		15E8834927F43BE6006A44D5 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8834427F43BE6006A44D5 /* CustomView.swift */; };
+		15E8834B27F43BF6006A44D5 /* CoreDataManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8834A27F43BF6006A44D5 /* CoreDataManage.swift */; };
+		15E8834E27F43C50006A44D5 /* MeasuredPersonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8834D27F43C50006A44D5 /* MeasuredPersonListViewController.swift */; };
+		15E8835127F43C7A006A44D5 /* EditMeasuredPersonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8834F27F43C7A006A44D5 /* EditMeasuredPersonTableViewController.swift */; };
+		15E8835227F43C7A006A44D5 /* AddMeasuredPersonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8835027F43C7A006A44D5 /* AddMeasuredPersonTableViewController.swift */; };
+		15E8835627F43CA0006A44D5 /* MeasuredPersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8835427F43CA0006A44D5 /* MeasuredPersonTableViewCell.swift */; };
+		15E8835727F43CA0006A44D5 /* MeasuredPersonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15E8835527F43CA0006A44D5 /* MeasuredPersonTableViewCell.xib */; };
+		15E8836227F44068006A44D5 /* Memo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8835827F44068006A44D5 /* Memo+CoreDataClass.swift */; };
+		15E8836327F44068006A44D5 /* Memo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8835927F44068006A44D5 /* Memo+CoreDataProperties.swift */; };
+		15E8836427F44068006A44D5 /* MeasuredPerson+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8835A27F44068006A44D5 /* MeasuredPerson+CoreDataClass.swift */; };
+		15E8836527F44068006A44D5 /* MeasuredPerson+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8835B27F44068006A44D5 /* MeasuredPerson+CoreDataProperties.swift */; };
+		15E8836627F44068006A44D5 /* Account+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8835C27F44068006A44D5 /* Account+CoreDataClass.swift */; };
+		15E8836727F44068006A44D5 /* Account+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8835D27F44068006A44D5 /* Account+CoreDataProperties.swift */; };
+		15E8836827F44068006A44D5 /* Measurement_data+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8835E27F44068006A44D5 /* Measurement_data+CoreDataClass.swift */; };
+		15E8836927F44068006A44D5 /* Measurement_data+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8835F27F44068006A44D5 /* Measurement_data+CoreDataProperties.swift */; };
+		15E8836A27F44068006A44D5 /* Measurement_func+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8836027F44068006A44D5 /* Measurement_func+CoreDataClass.swift */; };
+		15E8836B27F44068006A44D5 /* Measurement_func+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8836127F44068006A44D5 /* Measurement_func+CoreDataProperties.swift */; };
+		15E8836D27F443A6006A44D5 /* AlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8836C27F443A6006A44D5 /* AlertExtension.swift */; };
+		15E8836F27F4469B006A44D5 /* MeasuredPersonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8836E27F4469B006A44D5 /* MeasuredPersonHelper.swift */; };
+		15E8837127F4470F006A44D5 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8837027F4470F006A44D5 /* DateHelper.swift */; };
+		15E8837327F447F3006A44D5 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8837227F447F3006A44D5 /* Color.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		15E8833627F438F4006A44D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 15E8830827F438BB006A44D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 15E8832D27F438F4006A44D5;
+			remoteInfo = CSVShare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		15E8833C27F438F4006A44D5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				15E8833827F438F4006A44D5 /* CSVShare.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		15E8831027F438BB006A44D5 /* CSVShareApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSVShareApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +78,48 @@
 		15E8831F27F438BC006A44D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15E8832227F438BC006A44D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15E8832427F438BC006A44D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15E8832E27F438F4006A44D5 /* CSVShare.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CSVShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		15E8833027F438F4006A44D5 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		15E8833327F438F4006A44D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		15E8833527F438F4006A44D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15E8833D27F43908006A44D5 /* CSVShareApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CSVShareApp.entitlements; sourceTree = "<group>"; };
+		15E8833E27F43916006A44D5 /* CSVShare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CSVShare.entitlements; sourceTree = "<group>"; };
+		15E8834027F43BE6006A44D5 /* CustomLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		15E8834127F43BE6006A44D5 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		15E8834227F43BE6006A44D5 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		15E8834327F43BE6006A44D5 /* CustomImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		15E8834427F43BE6006A44D5 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		15E8834A27F43BF6006A44D5 /* CoreDataManage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManage.swift; sourceTree = "<group>"; };
+		15E8834D27F43C50006A44D5 /* MeasuredPersonListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasuredPersonListViewController.swift; sourceTree = "<group>"; };
+		15E8834F27F43C7A006A44D5 /* EditMeasuredPersonTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditMeasuredPersonTableViewController.swift; sourceTree = "<group>"; };
+		15E8835027F43C7A006A44D5 /* AddMeasuredPersonTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMeasuredPersonTableViewController.swift; sourceTree = "<group>"; };
+		15E8835427F43CA0006A44D5 /* MeasuredPersonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasuredPersonTableViewCell.swift; sourceTree = "<group>"; };
+		15E8835527F43CA0006A44D5 /* MeasuredPersonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeasuredPersonTableViewCell.xib; sourceTree = "<group>"; };
+		15E8835827F44068006A44D5 /* Memo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Memo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		15E8835927F44068006A44D5 /* Memo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Memo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		15E8835A27F44068006A44D5 /* MeasuredPerson+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeasuredPerson+CoreDataClass.swift"; sourceTree = "<group>"; };
+		15E8835B27F44068006A44D5 /* MeasuredPerson+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeasuredPerson+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		15E8835C27F44068006A44D5 /* Account+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataClass.swift"; sourceTree = "<group>"; };
+		15E8835D27F44068006A44D5 /* Account+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Account+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		15E8835E27F44068006A44D5 /* Measurement_data+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Measurement_data+CoreDataClass.swift"; sourceTree = "<group>"; };
+		15E8835F27F44068006A44D5 /* Measurement_data+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Measurement_data+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		15E8836027F44068006A44D5 /* Measurement_func+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Measurement_func+CoreDataClass.swift"; sourceTree = "<group>"; };
+		15E8836127F44068006A44D5 /* Measurement_func+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Measurement_func+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		15E8836C27F443A6006A44D5 /* AlertExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertExtension.swift; sourceTree = "<group>"; };
+		15E8836E27F4469B006A44D5 /* MeasuredPersonHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasuredPersonHelper.swift; sourceTree = "<group>"; };
+		15E8837027F4470F006A44D5 /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		15E8837227F447F3006A44D5 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		15E8830D27F438BB006A44D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15E8832B27F438F4006A44D5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,7 +132,18 @@
 		15E8830727F438BB006A44D5 = {
 			isa = PBXGroup;
 			children = (
+				15E8835827F44068006A44D5 /* Memo+CoreDataClass.swift */,
+				15E8835927F44068006A44D5 /* Memo+CoreDataProperties.swift */,
+				15E8835A27F44068006A44D5 /* MeasuredPerson+CoreDataClass.swift */,
+				15E8835B27F44068006A44D5 /* MeasuredPerson+CoreDataProperties.swift */,
+				15E8835C27F44068006A44D5 /* Account+CoreDataClass.swift */,
+				15E8835D27F44068006A44D5 /* Account+CoreDataProperties.swift */,
+				15E8835E27F44068006A44D5 /* Measurement_data+CoreDataClass.swift */,
+				15E8835F27F44068006A44D5 /* Measurement_data+CoreDataProperties.swift */,
+				15E8836027F44068006A44D5 /* Measurement_func+CoreDataClass.swift */,
+				15E8836127F44068006A44D5 /* Measurement_func+CoreDataProperties.swift */,
 				15E8831227F438BB006A44D5 /* CSVShareApp */,
+				15E8832F27F438F4006A44D5 /* CSVShare */,
 				15E8831127F438BB006A44D5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				15E8831027F438BB006A44D5 /* CSVShareApp.app */,
+				15E8832E27F438F4006A44D5 /* CSVShare.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,9 +160,11 @@
 		15E8831227F438BB006A44D5 /* CSVShareApp */ = {
 			isa = PBXGroup;
 			children = (
+				15E8834C27F43C2E006A44D5 /* View */,
+				15E8833F27F43BB9006A44D5 /* Common */,
+				15E8833D27F43908006A44D5 /* CSVShareApp.entitlements */,
 				15E8831327F438BB006A44D5 /* AppDelegate.swift */,
 				15E8831527F438BB006A44D5 /* SceneDelegate.swift */,
-				15E8831727F438BB006A44D5 /* ViewController.swift */,
 				15E8831927F438BB006A44D5 /* Main.storyboard */,
 				15E8831F27F438BC006A44D5 /* Assets.xcassets */,
 				15E8832127F438BC006A44D5 /* LaunchScreen.storyboard */,
@@ -68,6 +172,55 @@
 				15E8831C27F438BB006A44D5 /* CSVShareApp.xcdatamodeld */,
 			);
 			path = CSVShareApp;
+			sourceTree = "<group>";
+		};
+		15E8832F27F438F4006A44D5 /* CSVShare */ = {
+			isa = PBXGroup;
+			children = (
+				15E8833E27F43916006A44D5 /* CSVShare.entitlements */,
+				15E8833027F438F4006A44D5 /* ShareViewController.swift */,
+				15E8833227F438F4006A44D5 /* MainInterface.storyboard */,
+				15E8833527F438F4006A44D5 /* Info.plist */,
+			);
+			path = CSVShare;
+			sourceTree = "<group>";
+		};
+		15E8833F27F43BB9006A44D5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				15E8837227F447F3006A44D5 /* Color.swift */,
+				15E8837027F4470F006A44D5 /* DateHelper.swift */,
+				15E8836E27F4469B006A44D5 /* MeasuredPersonHelper.swift */,
+				15E8836C27F443A6006A44D5 /* AlertExtension.swift */,
+				15E8834A27F43BF6006A44D5 /* CoreDataManage.swift */,
+				15E8834127F43BE6006A44D5 /* CustomButton.swift */,
+				15E8834327F43BE6006A44D5 /* CustomImageView.swift */,
+				15E8834027F43BE6006A44D5 /* CustomLabel.swift */,
+				15E8834227F43BE6006A44D5 /* CustomTextField.swift */,
+				15E8834427F43BE6006A44D5 /* CustomView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		15E8834C27F43C2E006A44D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				15E8835327F43C87006A44D5 /* Cell */,
+				15E8831727F438BB006A44D5 /* ViewController.swift */,
+				15E8835027F43C7A006A44D5 /* AddMeasuredPersonTableViewController.swift */,
+				15E8834F27F43C7A006A44D5 /* EditMeasuredPersonTableViewController.swift */,
+				15E8834D27F43C50006A44D5 /* MeasuredPersonListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		15E8835327F43C87006A44D5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				15E8835427F43CA0006A44D5 /* MeasuredPersonTableViewCell.swift */,
+				15E8835527F43CA0006A44D5 /* MeasuredPersonTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,15 +233,34 @@
 				15E8830C27F438BB006A44D5 /* Sources */,
 				15E8830D27F438BB006A44D5 /* Frameworks */,
 				15E8830E27F438BB006A44D5 /* Resources */,
+				15E8833C27F438F4006A44D5 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				15E8833727F438F4006A44D5 /* PBXTargetDependency */,
 			);
 			name = CSVShareApp;
 			productName = CSVShareApp;
 			productReference = 15E8831027F438BB006A44D5 /* CSVShareApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		15E8832D27F438F4006A44D5 /* CSVShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15E8833927F438F4006A44D5 /* Build configuration list for PBXNativeTarget "CSVShare" */;
+			buildPhases = (
+				15E8832A27F438F4006A44D5 /* Sources */,
+				15E8832B27F438F4006A44D5 /* Frameworks */,
+				15E8832C27F438F4006A44D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CSVShare;
+			productName = CSVShare;
+			productReference = 15E8832E27F438F4006A44D5 /* CSVShare.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -101,6 +273,9 @@
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
 					15E8830F27F438BB006A44D5 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					15E8832D27F438F4006A44D5 = {
 						CreatedOnToolsVersion = 13.3;
 					};
 				};
@@ -119,6 +294,7 @@
 			projectRoot = "";
 			targets = (
 				15E8830F27F438BB006A44D5 /* CSVShareApp */,
+				15E8832D27F438F4006A44D5 /* CSVShare */,
 			);
 		};
 /* End PBXProject section */
@@ -128,9 +304,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15E8835727F43CA0006A44D5 /* MeasuredPersonTableViewCell.xib in Resources */,
 				15E8832327F438BC006A44D5 /* LaunchScreen.storyboard in Resources */,
 				15E8832027F438BC006A44D5 /* Assets.xcassets in Resources */,
 				15E8831B27F438BB006A44D5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15E8832C27F438F4006A44D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15E8833427F438F4006A44D5 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,14 +326,54 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15E8836B27F44068006A44D5 /* Measurement_func+CoreDataProperties.swift in Sources */,
+				15E8836227F44068006A44D5 /* Memo+CoreDataClass.swift in Sources */,
+				15E8836A27F44068006A44D5 /* Measurement_func+CoreDataClass.swift in Sources */,
+				15E8836327F44068006A44D5 /* Memo+CoreDataProperties.swift in Sources */,
+				15E8836F27F4469B006A44D5 /* MeasuredPersonHelper.swift in Sources */,
+				15E8836727F44068006A44D5 /* Account+CoreDataProperties.swift in Sources */,
+				15E8835127F43C7A006A44D5 /* EditMeasuredPersonTableViewController.swift in Sources */,
+				15E8834727F43BE6006A44D5 /* CustomTextField.swift in Sources */,
+				15E8834827F43BE6006A44D5 /* CustomImageView.swift in Sources */,
+				15E8837327F447F3006A44D5 /* Color.swift in Sources */,
+				15E8836927F44068006A44D5 /* Measurement_data+CoreDataProperties.swift in Sources */,
+				15E8834E27F43C50006A44D5 /* MeasuredPersonListViewController.swift in Sources */,
+				15E8836D27F443A6006A44D5 /* AlertExtension.swift in Sources */,
 				15E8831E27F438BB006A44D5 /* CSVShareApp.xcdatamodeld in Sources */,
+				15E8836627F44068006A44D5 /* Account+CoreDataClass.swift in Sources */,
+				15E8834927F43BE6006A44D5 /* CustomView.swift in Sources */,
+				15E8834527F43BE6006A44D5 /* CustomLabel.swift in Sources */,
+				15E8834627F43BE6006A44D5 /* CustomButton.swift in Sources */,
 				15E8831827F438BB006A44D5 /* ViewController.swift in Sources */,
+				15E8834B27F43BF6006A44D5 /* CoreDataManage.swift in Sources */,
 				15E8831427F438BB006A44D5 /* AppDelegate.swift in Sources */,
+				15E8835227F43C7A006A44D5 /* AddMeasuredPersonTableViewController.swift in Sources */,
+				15E8835627F43CA0006A44D5 /* MeasuredPersonTableViewCell.swift in Sources */,
+				15E8836427F44068006A44D5 /* MeasuredPerson+CoreDataClass.swift in Sources */,
+				15E8836827F44068006A44D5 /* Measurement_data+CoreDataClass.swift in Sources */,
+				15E8837127F4470F006A44D5 /* DateHelper.swift in Sources */,
+				15E8836527F44068006A44D5 /* MeasuredPerson+CoreDataProperties.swift in Sources */,
 				15E8831627F438BB006A44D5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		15E8832A27F438F4006A44D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15E8833127F438F4006A44D5 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15E8833727F438F4006A44D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 15E8832D27F438F4006A44D5 /* CSVShare */;
+			targetProxy = 15E8833627F438F4006A44D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		15E8831927F438BB006A44D5 /* Main.storyboard */ = {
@@ -165,6 +390,14 @@
 				15E8832227F438BC006A44D5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		15E8833227F438F4006A44D5 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15E8833327F438F4006A44D5 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -287,8 +520,10 @@
 		15E8832827F438BC006A44D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CSVShareApp/CSVShareApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2Q39S762VC;
@@ -297,8 +532,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,8 +552,10 @@
 		15E8832927F438BC006A44D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CSVShareApp/CSVShareApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2Q39S762VC;
@@ -325,8 +564,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,6 +575,60 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.charder.CSVShareApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		15E8833A27F438F4006A44D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CSVShare/CSVShare.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2Q39S762VC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CSVShare/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CSVShare;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.charder.CSVShareApp.CSVShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		15E8833B27F438F4006A44D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CSVShare/CSVShare.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2Q39S762VC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CSVShare/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CSVShare;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.charder.CSVShareApp.CSVShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -357,6 +652,15 @@
 			buildConfigurations = (
 				15E8832827F438BC006A44D5 /* Debug */,
 				15E8832927F438BC006A44D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15E8833927F438F4006A44D5 /* Build configuration list for PBXNativeTarget "CSVShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15E8833A27F438F4006A44D5 /* Debug */,
+				15E8833B27F438F4006A44D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

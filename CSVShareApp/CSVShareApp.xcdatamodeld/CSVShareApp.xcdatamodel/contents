@@ -1,4 +1,47 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="true" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21D49" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Account" representedClassName="Account" syncable="YES">
+        <attribute name="account" optional="YES" attributeType="String"/>
+        <attribute name="creatTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="password" optional="YES" attributeType="String"/>
+        <attribute name="permission" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="measuredPerson" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="MeasuredPerson" inverseName="account" inverseEntity="MeasuredPerson"/>
+    </entity>
+    <entity name="MeasuredPerson" representedClassName="MeasuredPerson" syncable="YES">
+        <attribute name="birthday" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="creatTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="gender" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="heightX1000" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="idCode" optional="YES" attributeType="String"/>
+        <attribute name="lastdate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="lastX10" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="account" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Account" inverseName="measuredPerson" inverseEntity="Account"/>
+        <relationship name="measurementData" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Measurement_data" inverseName="measuredPerson" inverseEntity="Measurement_data"/>
+        <relationship name="memo" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Memo" inverseName="measuredPerson" inverseEntity="Memo"/>
+    </entity>
+    <entity name="Measurement_data" representedClassName="Measurement_data" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="deviceId" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="measuredPerson" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="MeasuredPerson" inverseName="measurementData" inverseEntity="MeasuredPerson"/>
+        <relationship name="measurementFunc" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Measurement_func" inverseName="measurementData" inverseEntity="Measurement_func"/>
+    </entity>
+    <entity name="Measurement_func" representedClassName="Measurement_func" syncable="YES">
+        <attribute name="func_Id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="numberX10" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="times" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="measurementData" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="Measurement_data" inverseName="measurementFunc" inverseEntity="Measurement_data"/>
+    </entity>
+    <entity name="Memo" representedClassName="Memo" syncable="YES">
+        <attribute name="editTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="memo" optional="YES" attributeType="String"/>
+        <relationship name="measuredPerson" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="MeasuredPerson" inverseName="memo" inverseEntity="MeasuredPerson"/>
+    </entity>
+    <elements>
+        <element name="MeasuredPerson" positionX="-63" positionY="-18" width="128" height="194"/>
+        <element name="Measurement_func" positionX="-54" positionY="81" width="128" height="89"/>
+        <element name="Account" positionX="-36" positionY="90" width="128" height="104"/>
+        <element name="Measurement_data" positionX="-18" positionY="99" width="128" height="89"/>
+        <element name="Memo" positionX="0" positionY="108" width="128" height="74"/>
+    </elements>
 </model>

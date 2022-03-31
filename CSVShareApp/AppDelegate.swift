@@ -76,6 +76,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+    
+    lazy var persistentContainerOld : NSPersistentContainer = {
+        let container = NSPersistentContainer(name: "CSVShareApp")
+                container.loadPersistentStores(completionHandler: { (storeDescription, error) in
+                    if let error = error as NSError? {
+                        
+                        fatalError("Unresolved error \(error), \(error.userInfo)")
+                    }
+                })
+                return container
+    }()
+    func saveContextOld () {
+            let context = persistentContainerOld.viewContext
+            if context.hasChanges {
+                do {
+                    try context.save()
+                } catch {
+                    
+                    let nserror = error as NSError
+                    fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+                }
+            }
+    }
 
 }
 
