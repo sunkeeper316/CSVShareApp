@@ -200,6 +200,32 @@ class CoreDataManage : NSObject {
         }
         return false
     }
+    func saveMeasuredPersonForData(idCode:String,name:String , birthday:Date, height:Int , gender : Bool , createTime : Date) -> Bool{
+        if let currentAccount = CoreDataManage.currentAccount {
+            if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+                let context = appDelegate.persistentContainerOld.viewContext
+                if let measuredPerson = NSEntityDescription.insertNewObject(forEntityName: "MeasuredPerson", into: context) as? MeasuredPerson {
+                    measuredPerson.creatTime = createTime
+                    measuredPerson.name = name
+                    measuredPerson.idCode = idCode
+                    measuredPerson.birthday = birthday
+                    measuredPerson.heightX1000 = Int64(height)
+                    measuredPerson.gender = gender
+                    measuredPerson.account = currentAccount
+                    do {
+                        if context.hasChanges {
+                            try context.save()
+                            return true
+                        }
+                    } catch let error {
+                        print(error.localizedDescription)
+                        return false
+                    }
+                }
+            }
+        }
+        return false
+    }
     func deleteMeasuredPerson(mp:MeasuredPerson){
         if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
             let context = appDelegate.persistentContainerOld.viewContext

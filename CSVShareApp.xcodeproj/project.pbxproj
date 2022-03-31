@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		15E811A327F532BF0026FE42 /* CreateCSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E811A227F532BF0026FE42 /* CreateCSV.swift */; };
+		15E811A527F54A6D0026FE42 /* AnalysisCSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E811A427F54A6D0026FE42 /* AnalysisCSV.swift */; };
 		15E8831427F438BB006A44D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8831327F438BB006A44D5 /* AppDelegate.swift */; };
 		15E8831627F438BB006A44D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8831527F438BB006A44D5 /* SceneDelegate.swift */; };
 		15E8831827F438BB006A44D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8831727F438BB006A44D5 /* ViewController.swift */; };
@@ -71,6 +72,7 @@
 
 /* Begin PBXFileReference section */
 		15E811A227F532BF0026FE42 /* CreateCSV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCSV.swift; sourceTree = "<group>"; };
+		15E811A427F54A6D0026FE42 /* AnalysisCSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisCSV.swift; sourceTree = "<group>"; };
 		15E8831027F438BB006A44D5 /* CSVShareApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSVShareApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15E8831327F438BB006A44D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15E8831527F438BB006A44D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 		15E8833F27F43BB9006A44D5 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				15E811A427F54A6D0026FE42 /* AnalysisCSV.swift */,
 				15E811A227F532BF0026FE42 /* CreateCSV.swift */,
 				15E8837227F447F3006A44D5 /* Color.swift */,
 				15E8837027F4470F006A44D5 /* DateHelper.swift */,
@@ -335,6 +338,7 @@
 				15E8836327F44068006A44D5 /* Memo+CoreDataProperties.swift in Sources */,
 				15E8836F27F4469B006A44D5 /* MeasuredPersonHelper.swift in Sources */,
 				15E8836727F44068006A44D5 /* Account+CoreDataProperties.swift in Sources */,
+				15E811A527F54A6D0026FE42 /* AnalysisCSV.swift in Sources */,
 				15E8835127F43C7A006A44D5 /* EditMeasuredPersonTableViewController.swift in Sources */,
 				15E8834727F43BE6006A44D5 /* CustomTextField.swift in Sources */,
 				15E8834827F43BE6006A44D5 /* CustomImageView.swift in Sources */,
@@ -536,7 +540,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -568,7 +572,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

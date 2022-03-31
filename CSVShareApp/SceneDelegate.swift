@@ -16,9 +16,66 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+//        if let data = UserDefaults(suiteName: "group.com.charder.CSVShareApp")?.value(forKey: "file") as? Data {
+//            analysisData(data: data)
+//        }
         guard let _ = (scene as? UIWindowScene) else { return }
     }
-
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        if let url = URLContexts.first?.url {
+            print("URLContexts \(url)")
+            print("URLContexts \(url.host)")
+            print("URLContexts \(url.scheme)")
+            if let data = UserDefaults(suiteName: "group.com.charder.CSVShareApp")?.value(forKey: "file") as? Data {
+                analysisData(data: data)
+                UserDefaults(suiteName: "group.com.charder.CSVShareApp")?.removeObject(forKey: "file")
+                
+            }
+            let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate
+            
+            if let rootVC = sceneDelegate?.window?.rootViewController as? MeasuredPersonListViewController {
+                print("rootVC")
+                
+                print("rootVC presentedViewController \(rootVC.presentedViewController)")
+                if let presentedViewController = rootVC.presentedViewController {
+                    presentedViewController.dismiss(animated: true)
+                }
+                rootVC.measuredPersons = CoreDataManage.shared.loadAllMeasuredPerson()
+                print("count \(rootVC.measuredPersons.count)")
+                
+                if rootVC.measuredPersons.count == 0 {
+        //            tableView.isHidden = true
+                    rootVC.setNodata()
+                    rootVC.tableView.reloadData()
+                }else{
+        //            tableView.isHidden = false
+                    rootVC.setHaveData()
+                    rootVC.tableView.reloadData()
+                }
+            }
+            
+        }
+    }
+    
+    
+        
+    func handleIncomingURL(_ url: URL) {
+        if let scheme = url.scheme,
+           scheme.caseInsensitiveCompare("ShareExportApp") == .orderedSame,
+           let page = url.host {
+            
+            var parameters: [String: String] = [:]
+            URLComponents(url: url, resolvingAgainstBaseURL: false)?.queryItems?.forEach {
+                parameters[$0.name] = $0.value
+            }
+            
+            print("redirect(to: \(page), with: \(parameters))")
+            
+            for parameter in parameters where parameter.key.caseInsensitiveCompare("url") == .orderedSame {
+                UserDefaults().set(parameter.value, forKey: "incomingURL")
+            }
+        }
+    }
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.

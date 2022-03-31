@@ -4,6 +4,7 @@ import Foundation
 
 extension UIViewController {
     
+    
     func storeTranscription() {
             //retrieve the entity that we just created
         if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
@@ -72,16 +73,7 @@ extension UIViewController {
 
             
             var export :String = ""
-//            if let mp = CoreDataManage.currentMP {
-//                var showGender = ""
-//                if !mp.gender {
-//                    showGender = "Female"
-//                }else {
-//                    showGender = "Male"
-//                }
-//                export += "ID, \(strUser), \(strGender),\(strBirthday) \n"
-//                export += "\(mp.userId ?? ""), \(mp.name ?? ""), \(showGender),\(dateFormatter(date: mp.birthday ?? Date())) \n"
-//            }
+
             
             export += NSLocalizedString("ID, Name, Birthday, Height(cm), Gender,  CreateTime \n", comment: "")
             for (index, itemList) in fetchedStatsArray.enumerated() {

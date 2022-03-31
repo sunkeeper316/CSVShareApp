@@ -33,6 +33,22 @@ class MeasuredPersonListViewController: UIViewController {
 //        tfSearch.setLeftImage(leftImage: UIImage(named: "search")!)
         tfSearch.delegate = self
         tfSearch.addTarget(self, action: #selector(textDidChange), for: .editingChanged)
+//        if let data = UserDefaults(suiteName: "group.com.charder.CSVShareApp")?.value(forKey: "file") as? Data {
+//            analysisData(data: data)
+//            UserDefaults(suiteName: "group.com.charder.CSVShareApp")?.removeObject(forKey: "file")
+//        }
+        if let data = UserDefaults(suiteName: "group.com.charder.CSVShareApp")?.value(forKey: "file") as? Data {
+            analysisData(data: data)
+            UserDefaults(suiteName: "group.com.charder.CSVShareApp")?.removeObject(forKey: "file")
+            let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate
+            if let rootVC = sceneDelegate?.window?.rootViewController as? MeasuredPersonListViewController {
+                rootVC.measuredPersons = CoreDataManage.shared.loadAllMeasuredPerson()
+                print("count \(rootVC.measuredPersons.count)")
+                rootVC.tableView.reloadData()
+                
+            }
+            
+        }
         
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -41,13 +57,14 @@ class MeasuredPersonListViewController: UIViewController {
 //        ivTitle.image = styleList[currentUIStyleIndex].image
         measuredPersons = CoreDataManage.shared.loadAllMeasuredPerson()
         
+       
         setSortFunc(sortFunc: sortFunc)
         tableView.reloadData()
         if measuredPersons.count == 0 {
-            tableView.isHidden = true
+//            tableView.isHidden = true
             setNodata()
         }else{
-            tableView.isHidden = false
+//            tableView.isHidden = false
             setHaveData()
         }
         
