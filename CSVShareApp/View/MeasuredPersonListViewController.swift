@@ -81,8 +81,10 @@ class MeasuredPersonListViewController: UIViewController {
     }
     
     @IBAction func clickSetting(_ sender: UIButton) { //借用來share
-//        performSegue(withIdentifier: "Setting", sender: self)
+        let exportStr = createExportString(fetchedStatsArray: measuredPersons)
+        saveAndExport(exportString: exportStr)
     }
+    
     
     @IBAction func clickAdd(_ sender: UIButton) {
         performSegue(withIdentifier: "AddId", sender: self)
@@ -238,9 +240,11 @@ extension MeasuredPersonListViewController : UITableViewDelegate , UITableViewDa
             cell.lbLastdate.text = ""
         }
         if measuredPerson.gender  {
-            cell.lbPosture.text = "Man"
+            cell.lbPosture.text = "Male"
+            cell.viewPosture.backgroundColor = .blue
         }else{
-            cell.lbPosture.text = "Woman"
+            cell.lbPosture.text = "Female"
+            cell.viewPosture.backgroundColor = .red
         }
         
         if measuredPerson.idCode == addnewId {
@@ -255,7 +259,7 @@ extension MeasuredPersonListViewController : UITableViewDelegate , UITableViewDa
         let measuredPerson = measuredPersons[indexPath.row]
         CoreDataManage.currentMP = measuredPerson
         addnewId = ""
-        performSegue(withIdentifier: "MeasuredPerson", sender: self)
+        performSegue(withIdentifier: "EditMP", sender: self)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

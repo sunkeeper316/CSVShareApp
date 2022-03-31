@@ -32,14 +32,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p59-qu-vir" customClass="CustomUIView" customModule="BodyCompositionManager" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p59-qu-vir" customClass="CustomUIView" customModule="CSVShareApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="164" width="414" height="2.5"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2.5" id="YoU-kx-6FM"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_big" translatesAutoresizingMaskIntoConstraints="NO" id="QNs-aE-V22" customClass="CustomImageView" customModule="BodyCompositionManager" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_big" translatesAutoresizingMaskIntoConstraints="NO" id="QNs-aE-V22" customClass="CustomImageView" customModule="CSVShareApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="414" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="MZO-4K-yk9"/>
@@ -48,25 +48,25 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xZN-Od-jEQ">
                                 <rect key="frame" x="20" y="166.5" width="374" height="40"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63j-Wj-jsd" customClass="BackUIButton" customModule="BodyCompositionManager" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63j-Wj-jsd" customClass="BackUIButton" customModule="CSVShareApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="124.5" height="40"/>
                                         <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="15" maxX="0.0" maxY="15"/>
-                                        <state key="normal" title="Name" image="garyarrow"/>
+                                        <state key="normal" title="ID/Name" image="garyarrow"/>
                                         <connections>
                                             <action selector="clickName:" destination="dKy-9Y-gnz" eventType="touchUpInside" id="ElM-oR-1cs"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWz-Gt-LFU" customClass="BackUIButton" customModule="BodyCompositionManager" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWz-Gt-LFU" customClass="BackUIButton" customModule="CSVShareApp" customModuleProvider="target">
                                         <rect key="frame" x="124.5" y="0.0" width="125" height="40"/>
                                         <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="15" maxX="0.0" maxY="15"/>
-                                        <state key="normal" title="Measurement Date" image="redarrow"/>
+                                        <state key="normal" title="Birthday" image="redarrow"/>
                                         <connections>
                                             <action selector="clickDate:" destination="dKy-9Y-gnz" eventType="touchUpInside" id="yMD-ln-9oN"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Body Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fX-1c-bQC">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fX-1c-bQC">
                                         <rect key="frame" x="249.5" y="0.0" width="124.5" height="40"/>
                                         <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -218,10 +218,10 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="727.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_big" translatesAutoresizingMaskIntoConstraints="NO" id="oKP-lL-avp" customClass="CustomImageView" customModule="BodyCompositionManager" customModuleProvider="target">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_big" translatesAutoresizingMaskIntoConstraints="NO" id="oKP-lL-avp" customClass="CustomImageView" customModule="CSVShareApp" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                                 </imageView>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q3K-Tk-1oV" customClass="CustomUIView" customModule="BodyCompositionManager" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q3K-Tk-1oV" customClass="CustomUIView" customModule="CSVShareApp" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="60" width="414" height="2.5"/>
                                                     <color key="backgroundColor" systemColor="systemTealColor"/>
                                                     <constraints>
@@ -275,7 +275,7 @@
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
-                                                            <textInputTraits key="textInputTraits" textContentType="name"/>
+                                                            <textInputTraits key="textInputTraits" keyboardType="alphabet" textContentType="name"/>
                                                         </textField>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LMO-gC-yS0">
                                                             <rect key="frame" x="10" y="289" width="374" height="2"/>
@@ -495,13 +495,13 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="727.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_big" translatesAutoresizingMaskIntoConstraints="NO" id="WM5-pd-GsY" customClass="CustomImageView" customModule="BodyCompositionManager" customModuleProvider="target">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_big" translatesAutoresizingMaskIntoConstraints="NO" id="WM5-pd-GsY" customClass="CustomImageView" customModule="CSVShareApp" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="60" id="MOU-PS-ac7"/>
                                                     </constraints>
                                                 </imageView>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3HR-vV-Hf4" customClass="CustomUIView" customModule="BodyCompositionManager" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3HR-vV-Hf4" customClass="CustomUIView" customModule="CSVShareApp" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="60" width="414" height="2.5"/>
                                                     <color key="backgroundColor" systemColor="systemTealColor"/>
                                                     <constraints>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15E811A327F532BF0026FE42 /* CreateCSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E811A227F532BF0026FE42 /* CreateCSV.swift */; };
 		15E8831427F438BB006A44D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8831327F438BB006A44D5 /* AppDelegate.swift */; };
 		15E8831627F438BB006A44D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8831527F438BB006A44D5 /* SceneDelegate.swift */; };
 		15E8831827F438BB006A44D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E8831727F438BB006A44D5 /* ViewController.swift */; };
@@ -69,6 +70,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		15E811A227F532BF0026FE42 /* CreateCSV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateCSV.swift; sourceTree = "<group>"; };
 		15E8831027F438BB006A44D5 /* CSVShareApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSVShareApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15E8831327F438BB006A44D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15E8831527F438BB006A44D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 		15E8833F27F43BB9006A44D5 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				15E811A227F532BF0026FE42 /* CreateCSV.swift */,
 				15E8837227F447F3006A44D5 /* Color.swift */,
 				15E8837027F4470F006A44D5 /* DateHelper.swift */,
 				15E8836E27F4469B006A44D5 /* MeasuredPersonHelper.swift */,
@@ -352,6 +355,7 @@
 				15E8836427F44068006A44D5 /* MeasuredPerson+CoreDataClass.swift in Sources */,
 				15E8836827F44068006A44D5 /* Measurement_data+CoreDataClass.swift in Sources */,
 				15E8837127F4470F006A44D5 /* DateHelper.swift in Sources */,
+				15E811A327F532BF0026FE42 /* CreateCSV.swift in Sources */,
 				15E8836527F44068006A44D5 /* MeasuredPerson+CoreDataProperties.swift in Sources */,
 				15E8831627F438BB006A44D5 /* SceneDelegate.swift in Sources */,
 			);

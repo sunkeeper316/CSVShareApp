@@ -134,6 +134,7 @@ class EditMeasuredPersonTableViewController: UITableViewController {
         }
     }
     @IBAction func clickBack(_ sender: UIButton) {
+        CoreDataManage.currentMP = nil
         dismiss(animated: true, completion: nil)
     }
     @IBAction func clickSave(_ sender: UIButton){

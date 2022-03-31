@@ -41,6 +41,10 @@ func dateTimeFormatter(date:String) -> Date?{
     formatter.dateFormat = "\(customDateFormatterList[customDateFormatterIndex].dateFormat!)  HH:mm:ss"
     return formatter.date(from: date)
 }
+func dateTimeFormatterCSV(date:Date) -> String{
+    
+    return DateHelper.shared.dateFormatter4.string(from: date)
+}
 class DateHelper: NSObject {
     static var shared = DateHelper()
     
@@ -63,6 +67,11 @@ class DateHelper: NSObject {
     lazy var dateFormatter3: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        return formatter
+    }()
+    lazy var dateFormatter4: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyyMMdd_HHmmss"
         return formatter
     }()
 }
